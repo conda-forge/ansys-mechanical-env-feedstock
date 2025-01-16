@@ -1,5 +1,5 @@
 {% set name = "ansys-mechanical-env" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_mechanical_env-{{ version }}.tar.gz
-  sha256: 5286202292f6aeb3bf2278003059dbcd64774db2decb16a8cf68d15affef51d6
+  sha256: 83211b648a2d09436622df0815708c0e6fcfcde6503b9d0cfc182a49c2c2d74e
 
 build:
   noarch: python
   entry_points:
     - find-mechanical=ansys.mechanical.env.run:cli_find_mechanical
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
