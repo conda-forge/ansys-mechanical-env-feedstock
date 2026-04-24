@@ -1,5 +1,5 @@
 {% set name = "ansys-mechanical-env" %}
-{% set version = "0.1.16" %}
+{% set version = "0.1.17" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_mechanical_env-{{ version }}.tar.gz
-  sha256: 71ad25b8f43eb5336b5182e215936668f87ffdc5bb660c57d73b107ee9757fb8
+  sha256: 65f052b4450ace3b01703ea34a134084d25657102d192eb8e14d15f384871cd4
 
 build:
   noarch: python
